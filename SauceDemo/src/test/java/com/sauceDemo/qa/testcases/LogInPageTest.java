@@ -69,7 +69,8 @@ public class LogInPageTest extends TestBase {
     }
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
         driver.quit();
     }
 }
